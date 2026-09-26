@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SEU Tech Event Information and Registration Page</title>
+  <title>SEU Tech Event 2025 | Lab 04 Registration</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
@@ -67,7 +67,7 @@
     <!-- ═══════════ SECTION 1: ABOUT ═══════════ -->
     <section class="section" id="about">
       <div class="container">
-        <div class="">
+        <div>
           <p class="section-label">About the Event</p>
           <h2 class="section-title">What is SEU Tech Event?</h2>
           <p class="section-desc">
@@ -81,7 +81,7 @@
         <div class="about-grid">
 
           <!-- Card 1: uses div and span meaningfully -->
-          <div class="about-card ">
+          <div class="about-card">
             <div class="about-card-icon">
               <span class="iconify" data-icon="lucide:target" data-width="22"></span>
             </div>
@@ -96,7 +96,7 @@
           </div>
 
           <!-- Card 2: working hyperlink -->
-          <div class="about-card ">
+          <div class="about-card">
             <div class="about-card-icon">
               <span class="iconify" data-icon="lucide:map-pin" data-width="22"></span>
             </div>
@@ -112,7 +112,7 @@
           </div>
 
           <!-- Card 3: image with alt attribute -->
-          <div class="about-card about-image-card ">
+          <div class="about-card about-image-card">
             <img
               src="https://picsum.photos/seed/seu-tech-event-2025/600/400.jpg"
               alt="SEU Tech Event venue showing the Southeast University auditorium"
@@ -126,7 +126,7 @@
 
 
         <!-- ═══════════ LAB 03 JAVASCRIPT INTERACTIONS ═══════════ -->
-        <div class="js-interaction-panel ">
+        <div class="js-interaction-panel">
           <p class="section-label">JavaScript Interaction</p>
           <h3 class="js-panel-title">Try the Workshop Controls</h3>
 
@@ -157,11 +157,21 @@
               </button>
               <p id="venueMessage">Click the button to see the event venue.</p>
             </div>
+
+            <!-- Lab 03 greeting interaction retained in the Lab 04 project -->
+            <div class="js-interaction-card">
+              <h4>Personalized Greeting</h4>
+              <p class="interaction-help">Use the Full Name field below.</p>
+              <button type="button" class="js-action-btn" onclick="showGreeting()">
+                Show Greeting
+              </button>
+              <p id="greetingMessage">Your greeting will appear here.</p>
+            </div>
           </div>
         </div>
 
         <!-- Participation details paragraph -->
-        <div class="">
+        <div>
           <h3>
             Participation Details
           </h3>
@@ -183,7 +193,7 @@
     <section class="section highlights-section" id="highlights">
       <div class="container">
 
-        <div class="">
+        <div>
           <p class="section-label">Event Highlights</p>
           <h2 class="section-title">What to Expect</h2>
           <p class="section-desc">
@@ -195,7 +205,7 @@
         <div class="highlights-grid">
 
           <!-- Unordered List -->
-          <div class="highlight-card ">
+          <div class="highlight-card">
             <span class="highlight-number">01</span>
             <h3>Key Topics</h3>
             <ul>
@@ -223,7 +233,7 @@
           </div>
 
           <!-- Ordered List -->
-          <div class="highlight-card ">
+          <div class="highlight-card">
             <span class="highlight-number">02</span>
             <h3>Event Flow</h3>
             <ol>
@@ -251,7 +261,7 @@
           </div>
 
           <!-- Extra info card -->
-          <div class="highlight-card ">
+          <div class="highlight-card">
             <span class="highlight-number">03</span>
             <h3>Who Should Attend</h3>
             <ul>
@@ -277,7 +287,7 @@
         </div>
 
         <!-- Nested List -->
-        <div class="nested-block ">
+        <div class="nested-block">
           <p class="nested-block-label">Detailed Session Breakdown</p>
           <ul class="nested-list">
             <li>
@@ -327,7 +337,7 @@
     <!-- ═══════════ SECTION 3: SCHEDULE ═══════════ -->
     <section class="section" id="schedule">
       <div class="container">
-        <div class="">
+        <div>
           <p class="section-label">Schedule</p>
           <h2 class="section-title">Event Schedule</h2>
           <p class="section-desc">
@@ -335,7 +345,7 @@
           </p>
         </div>
 
-        <div class="schedule-table-wrapper ">
+        <div class="schedule-table-wrapper">
           <table class="schedule-table">
             <thead>
               <tr>
@@ -427,7 +437,7 @@
     <!-- ═══════════ SECTION 4: REGISTRATION ═══════════ -->
     <section class="section register-section" id="register">
       <div class="container">
-        <div class="">
+        <div>
           <p class="section-label">Register</p>
           <h2 class="section-title">Registration Form</h2>
         </div>
@@ -435,7 +445,7 @@
         <div class="register-layout">
 
           <!-- Info column -->
-          <div class="register-info ">
+          <div class="register-info">
             <p class="section-desc">
               Fill in the form to secure your spot at SEU Tech Event 2025.
               Fields marked with an asterisk are required.
@@ -461,114 +471,95 @@
           </div>
 
           <!-- Form column -->
-          <div class="form-card ">
-            <form id="registrationForm" novalidate>
+          <div class="form-card">
+            <form id="registrationForm">
 
-              <!-- Full Name & Student ID (side by side) -->
+              <!-- Full Name and Student ID -->
               <div class="form-row-2col">
                 <div class="form-row">
-                  <label for="fullname">Full Name <span class="required">*</span></label>
+                  <label for="studentName">Full Name <span class="required">*</span></label>
                   <input
                     type="text"
                     id="studentName"
-                    name="fullname"
+                    name="studentName"
                     class="form-input"
                     placeholder="Enter your full name"
-                    required
                   >
-                  <p class="form-error" id="fullnameError">Please enter your full name.</p>
                 </div>
-                  <button type="button" class="js-action-btn greeting-btn" onclick="showGreeting()">
-                    Show Greeting
-                  </button>
-                  <p class="interaction-output" id="greetingMessage"></p>
 
                 <div class="form-row">
-                  <label for="studentid">Student ID <span class="required">*</span></label>
+                  <label for="studentId">Student ID <span class="required">*</span></label>
                   <input
-                    type="number"
-                    id="studentid"
-                    name="studentid"
+                    type="text"
+                    id="studentId"
+                    name="studentId"
                     class="form-input"
                     placeholder="Enter your student ID"
-                    required
                   >
-                  <p class="form-error" id="studentidError">Please enter a valid student ID.</p>
                 </div>
               </div>
 
               <!-- Email -->
               <div class="form-row">
-                <label for="email">Email Address <span class="required">*</span></label>
+                <label for="studentEmail">Email Address <span class="required">*</span></label>
                 <input
                   type="email"
-                  id="email"
-                  name="email"
+                  id="studentEmail"
+                  name="studentEmail"
                   class="form-input"
                   placeholder="Enter your email address"
-                  required
-                >
-                <p class="form-error" id="emailError">Please enter a valid email address.</p>
-              </div>
-
-              <!-- Preferred Date -->
-              <div class="form-row">
-                <label for="date">Preferred Start Date</label>
-                <input
-                  type="date"
-                  id="date"
-                  name="date"
-                  class="form-input"
                 >
               </div>
 
-              <!-- Radio Group: Attendance Mode -->
+              <!-- Workshop -->
               <div class="form-row">
-                <span class="form-group-label">Attendance Mode</span>
-                <div class="radio-group">
-                  <div class="radio-option">
-                    <input type="radio" id="inperson" name="mode" value="In-Person">
-                    <label for="inperson">
-                      <span class="iconify" data-icon="lucide:users" data-width="14"></span>
-                      In-Person
-                    </label>
-                  </div>
-                  <div class="radio-option">
-                    <input type="radio" id="online" name="mode" value="Online">
-                    <label for="online">
-                      <span class="iconify" data-icon="lucide:monitor" data-width="14"></span>
-                      Online
-                    </label>
-                  </div>
-                </div>
-              </div>
-
-              <!-- Checkbox Group: Interests -->
-              <div class="form-row">
-                <span class="form-group-label">Areas of Interest</span>
-                <div class="checkbox-group">
-                  <div class="checkbox-option">
-                    <input type="checkbox" id="webdev" name="interest_webdev" value="Web Development">
-                    <label for="webdev">Web Development</label>
-                  </div>
-                  <div class="checkbox-option">
-                    <input type="checkbox" id="ai" name="interest_ai" value="AI and ML">
-                    <label for="ai">AI and ML</label>
-                  </div>
-                </div>
+                <label for="workshop">Workshop <span class="required">*</span></label>
+                <select id="workshop" name="workshop" class="form-input">
+                  <option value="">Select a workshop</option>
+                  <option value="HTML Basics">HTML Basics</option>
+                  <option value="CSS Basics">CSS Basics</option>
+                  <option value="JavaScript Basics">JavaScript Basics</option>
+                </select>
               </div>
 
               <!-- Submit Button -->
               <div class="form-submit">
-                <button type="submit" class="btn-submit">
-                  Submit Registration
+                <button type="button" class="btn-submit" onclick="submitRegistration()">
+                  Save Registration
                   <span class="iconify" data-icon="lucide:arrow-right" data-width="14"></span>
                 </button>
               </div>
 
+              <p id="formMessage" class="form-status"></p>
             </form>
           </div>
 
+        </div>
+
+        <!-- Lab 04: JSON and Local Storage -->
+        <div class="lab04-data-grid">
+          <div class="data-card">
+            <p class="section-label">JSON Output</p>
+            <h3>Registration Data</h3>
+            <pre id="jsonOutput">No registration saved yet.</pre>
+          </div>
+
+          <div class="data-card">
+            <p class="section-label">Saved Data</p>
+            <h3>Browser Storage</h3>
+            <p class="data-card-desc">
+              Save the registration in the browser, then load it again after refreshing the page.
+            </p>
+            <div class="data-actions">
+              <button type="button" class="js-action-btn" onclick="showSavedRegistration()">
+                Show Saved Registration
+              </button>
+              <button type="button" class="js-action-btn secondary-action" onclick="clearRegistration()">
+                Clear Saved Registration
+              </button>
+            </div>
+            <p id="savedMessage" class="interaction-output">No saved registration loaded.</p>
+          </div>
         </div>
       </div>
     </section>
